@@ -279,6 +279,16 @@ def choiced_data(params):
             x_train.append(temp)
             y_train.append(classDict[v[1]])
     return x_train,y_train
+	
+def all_data(params):
+    x_train = []
+    y_train = []
+    for i,v in enumerate(params):             
+        temp = []
+        temp.append(v[0])
+        x_train.append(temp)
+        y_train.append(lableDict[v[1]])
+    return x_train,y_train
 
 def labeled_data(params):
     x_train = []
